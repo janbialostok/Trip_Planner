@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+	<head>
+		<title>Errors</title>
+	</head>
+	<body>
+		{% block errors %}
+		<ul>
+		{% for error in errors %}
+			<li>{{JSON.stringify(error)}} Error</li>
+		{% endfor %}
+		</ul>
+		{% endblock %}
+	</body>
+</html>
